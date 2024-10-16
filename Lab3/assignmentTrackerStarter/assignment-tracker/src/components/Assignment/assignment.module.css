@@ -1,0 +1,59 @@
+/* assignment.module.css */
+.assignment {
+  width: 100%;
+  background: #262626;
+  border: 1px solid #333333;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.assignment p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #f2f2f2;
+  margin-right: auto;
+}
+
+p.textCompleted {
+  color: #808080;
+  text-decoration: line-through;
+}
+
+.checkContainer {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #4ea8de;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.checkContainer div {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.checked {
+  background-color: #800080; /* Purple */
+  border: 2px solid #800080; /* Match the border color to the fill color */
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #808080;
+}
+
+.completed p {
+  text-decoration: line-through;
+  color: gray;
+}

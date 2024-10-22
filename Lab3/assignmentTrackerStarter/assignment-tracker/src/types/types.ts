@@ -1,7 +1,6 @@
-// Types
 export interface Assignment {
-    id: number;
-    title: string;
-    completed: boolean;
-  }
-  
+  id: string;
+  title: string;
+  completed: boolean;
+  dueDate: Date;
+}

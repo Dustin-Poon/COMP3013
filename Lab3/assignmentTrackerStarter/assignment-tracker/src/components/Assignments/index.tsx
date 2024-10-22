@@ -1,25 +1,27 @@
-// Import necessary modules
+// Import necessary styles and components
 import styles from "./assignments.module.css";
-import { Assignment } from "../Assignment"; // Import Assignment component
+import { Assignment } from "../Assignment";
 
-// Define the props for the Assignments component
+// Define the structure of an Assignment object
 interface Assignment {
-  id: number;
+  id: string; // Change from number to string for crypto
   title: string;
   completed: boolean;
+  dueDate: Date;
 }
 
+// Define the props for the Assignments component
 interface AssignmentsProps {
   assignments: Assignment[];
-  deleteAssignment: (id: number) => void;
-  toggleCompletion: (id: number) => void;
+  deleteAssignment: (id: string) => void; // Update parameter type to string
+  toggleCompletion: (id: string) => void; // Update parameter type to string
 }
 
+// Assignments component to display a list of assignments
 export function Assignments({ assignments, deleteAssignment, toggleCompletion }: AssignmentsProps) {
   // Calculate the number of completed assignments
   const completedCount = assignments.filter((assignment) => assignment.completed).length;
 
-  // Render the list of assignments and header
   return (
     <section className={styles.assignments}>
       <header className={styles.header}>

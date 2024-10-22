@@ -57,3 +57,22 @@ p.textCompleted {
   text-decoration: line-through;
   color: gray;
 }
+
+
+
+/* assignment.module.css */
+.dueDate {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+.dueSoon {
+  background-color: red;
+  color: white;
+}
+
+.dueNow {
+  background-color: darkred;
+  color: white;
+}
